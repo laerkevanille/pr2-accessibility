@@ -24,15 +24,15 @@ header{
     margin: 0.5em;
 }
 
-nav ul{
+.main-nav ul{
     list-style: none;
 }
 
-nav li{
+.main-nav li{
     display: inline-block;
 }
 
-nav li a{
+.main-nav li a{
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
@@ -41,7 +41,7 @@ nav li a{
     padding: 0.3em 1em;
 }
 
-nav li a:hover{
+.main-nav li a:hover{
     text-decoration: underline;
     cursor: pointer;
 }
@@ -54,14 +54,14 @@ nav li a:hover{
 /*Hovedindhold*/
 
 main{
-    background-color: #687354;
+    background-color: #f9feed;
     background-image: linear-gradient(to bottom, #687354, #f9feed);
 }
 
 h1{
     color: #FAF5E6;
-    -webkit-text-stroke: 1px #687354;
-    font-size: 96px;
+    background-color: #687354;
+    font-size: 64px;
     padding: 0.3em;
 }
 
@@ -72,6 +72,14 @@ h1{
     #bars{
         display: none;
     }
+
+    h1{
+        font-size: 96px;
+    }
+
+    .main-nav li a{
+        font-size: 1.7vw;
+    }
 }
 
 
@@ -80,5 +88,39 @@ h1{
 @media screen and (max-width: 768px){
     .main-nav{
         display: none;
+    }
+
+    .main-nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 50px;
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .main-nav li a{
+        color:#687354;
+        font-size: 20px;
+    }
+
+    button#bars{
+        background-color: transparent;
+        border: none;
+    }
+
+    #bars i{
+        font-size: 24px;
+        color:#FAF5E6;
+    }
+
+    .show{
+        display: block;
+        position: absolute;
+        top: 110px;
+        left: 0;
+        background-color: #FAF5E6;
+        width: 100%;
+        height: max-content;
     }
 }
