@@ -24,6 +24,12 @@ header{
     margin: 0.5em;
 }
 
+.main-nav{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+}
+
 .main-nav ul{
     list-style: none;
 }
@@ -35,7 +41,7 @@ header{
 .main-nav li a{
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 500;
     color: #FAF5E6;
     padding: 0.3em 1em;
@@ -56,6 +62,7 @@ header{
 main{
     background-color: #f9feed;
     background-image: linear-gradient(to bottom, #687354, #f9feed);
+    width: 100%;
 }
 
 h1{
@@ -65,20 +72,50 @@ h1{
     padding: 0.3em;
 }
 
+.banner{
+    margin: 0 auto;
+    aspect-ratio: 16/9;
+    width: 80%;
+    background-color: burlywood; /*placeholder for billede*/
+}
+
+.visually-hidden{
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+
 
 /*Desktop*/
 
 @media screen and (min-width: 769px){
+    header{
+        justify-content: space-around;
+    }
+    
     #bars{
         display: none;
     }
 
-    h1{
-        font-size: 96px;
+    .main-nav{
+        flex-wrap: wrap-reverse;
     }
 
     .main-nav li a{
-        font-size: 1.7vw;
+        font-size: 1.6vw;
+    }
+
+    .main-nav input{
+        max-width: 15%;
+    }
+
+    h1{
+        font-size: 96px;
     }
 }
 
@@ -90,18 +127,23 @@ h1{
         display: none;
     }
 
+    .main-nav input{
+        display: flex;
+        justify-self: center;
+        padding: 10px 15px;
+        margin: 25px auto 35px auto;
+    }
+
     .main-nav ul{
         display: flex;
-        flex-wrap: wrap;
         flex-direction: column;
-        gap: 50px;
+        gap: 40px;
         text-align: center;
-        padding: 50px 0;
+        padding: 0 0 50px 0;
     }
 
     .main-nav li a{
         color:#687354;
-        font-size: 20px;
     }
 
     button#bars{
