@@ -70,7 +70,7 @@ h1{
     color: #FAF5E6;
     background-color: #687354;
     font-size: 64px;
-    padding: 0.3em;
+    padding: 0.3em 5%;
 }
 
 h2{
@@ -78,11 +78,19 @@ h2{
     font-size: 24px;
 }
 
+h3{
+    color: #687354;
+}
+
 .banner{
-    margin: 0 auto 7vh auto;
-    aspect-ratio: 16/9;
+    margin: 0 5% 7vh 5%;
     width: 90%;
-    background-color: burlywood; /*placeholder for billede*/
+    aspect-ratio: 3/2;
+    background-image: url(/img/banner.jpg);
+    object-fit: contain;
+    object-position: center;
+    background-size: contain;
+    background-position: center;
 }
 
 .categories p{
@@ -93,8 +101,8 @@ h2{
 
 .categories a{
     text-decoration: none;
-    color: #2d1203;
-    font-size: 16px;
+    color: #160902;
+    font-size: 18px;
     font-weight: 600;
 }
 
@@ -120,7 +128,7 @@ h2{
     gap: 15px;
     padding: 10px;
     background-color: #687354;
-    border: 2px solid #515b3f;
+    border: 2px solid #f9feed;
     height: 32vh;
     width: 100%
 }
@@ -128,21 +136,20 @@ h2{
 .right-div{
     border-radius: 30px 0 0 30px;
     border-right: none;
+    padding-right: 4%;
 }
 
 .left-div{
     border-radius: 0 30px 30px 0;
     border-left: none;
     justify-content: space-between;
+    padding-left: 5%
 }
 
 .left-content, .right-content{
     display: flex;
     flex-direction: column;
-}
-
-.left-content{
-    gap: 5px;
+    gap: 8px;
 }
 
 .left-img, .right-img{
@@ -155,6 +162,83 @@ h2{
 .left-img{
     justify-self: flex-end;
 }
+
+.textbox{
+    margin: 2em 5%;
+    padding: 1.3em 5%;
+    background-color: #f9feed;
+    border: 4px solid #515b3f;
+    border-radius: 15px;
+}
+
+.textbox h3, .textbox p{
+    padding-bottom: 1em; 
+}
+
+.quote{
+    margin: 2em 8%;
+}
+
+blockquote p{
+    font-size: 28px;
+    color: #515b3f;
+    font-weight: 700;
+}
+
+cite{
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    display: flex;
+    justify-self: flex-end;
+}
+
+
+/*Footer*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: #687354;
+    width: 100%;
+    min-height: fit-content;
+}
+
+.email-footer{
+    display: flex;
+    align-content: center;
+}
+
+.email-footer i{
+    color: #f9feed;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.email-footer a{
+    color: #f9feed;
+    font-size: 16px;
+}
+
+.some-footer{
+    display: flex;
+    align-content: center;
+}
+
+.some-footer i{
+    color: #f9feed;
+    font-size: 22px;
+    padding: 0 18px;
+}
+
+.fa-instagram{
+    font-size: 25px;
+}
+
 
 .visually-hidden{
 	border: 0;
@@ -170,7 +254,7 @@ h2{
 
 /*Desktop*/
 
-@media screen and (min-width: 769px) and (max-width: 952px) {
+@media screen and (min-width: 769px) and (max-width: 1012px) {
     button#search-btn{
         background-color: transparent;
         border: none;
@@ -198,7 +282,7 @@ h2{
     }
 }
 
-@media screen and (min-width: 953px) {
+@media screen and (min-width: 1013px) {
     button#search-btn{
         display: none;
     }
@@ -213,16 +297,12 @@ h2{
         display: none;
     }
 
-    /*.main-nav{
-        flex-wrap: wrap-reverse;
-    }*/
-
     .main-nav li a{
         font-size: 1.6vw;
     }
 
     .main-nav input{
-        max-width: 15%;
+        max-width: 20%;
     }
 
     h1{
