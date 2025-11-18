@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kontakt - Bright Spot</title>
+    <title>Bright Spot</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/projekt 2 logo2.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,14 +19,22 @@
         <a href="index.html"><img src="img/projekt 2 logo2.svg" alt="bright spot logo" class="logo"></a>
 
         <nav class="main-nav">
+
+            <label for="search" class="visually-hidden">Søg</label>
+            <input type="search" id="search" placeholder="Søg">
+
             <ul>
-                <li><a href="index.html">Forside</a></li>
+                <li><a href="index.html" class="active">Forside</a></li>
                 <li><a href="#">Om mental sundhed</a></li>
-                <li><a href="#">Strategier for velvære</a></li>
+                <li><a href="#">Velværestrategier</a></li>
                 <li><a href="#">Om os</a></li>
-                <li><a href="kontakt.html" class="active">Kontakt</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
+
+        <button id="search-btn">
+            <i class="fa-solid fa-magnifying-glass" aria-label="søgebar" aria-hidden="true"></i>
+        </button>
 
         <button id="bars">
             <i class="fa-solid fa-bars" aria-label="navigationsmenu" aria-hidden="true"></i>
@@ -34,9 +42,73 @@
 
     </header>
 
-    <main></main>
+    <main>
+
+        <h1>Skriv til os!</h1>
+        <p>Har du spørgsmål eller brug for hjælp? Tøv ikke med at skrive til os! Vi vender tilbage til dig hurtigst muligt.</p>
+
+        <p>Har du akut brug for hjælp, så <a href="#">find en hotline her</a> eller <strong>ring 112 i livstruende situationer.</strong></p>
+
+        <p>Få fat på os på email</p>
+        <address class="email-kontakt" aria-label="email-adresse"><a href="#">hej@brightspot.dk</a></address>
+
+        <p>eller benyt vores kontaktformular nedenfor</p>
+
+        <form action="">
+
+            <p><p>*</p>Skal udfyldes</p>
+
+            <div class="navn">
+                <label for="navn">Navn<p>*</p></label>
+                <input type="text" name="navn" id="navn" autocomplete="name" required>
+            </div>
+
+            <div class="email">
+                <label for="email">E-mail<p>*</p></label>
+                <input type="email" id="email" autocomplete="email" required>
+            </div>
+
+            <div class="henv-pers">
+
+                <p>Jeg henvender mig på vegne af...<p>*</p></p>
+
+                <div class="options">
+                    <input type="radio" name="henvendelse" id="mig" required>
+                    <label for="mig">Mig selv</label>
+
+                    <input type="radio" name="henvendelse" id="anden" required>
+                    <label for="anden">En anden</label>
+                </div>
+
+            </div>
+
+            <div class="besked">
+                <label for="besked">Besked<p>*</p></label>
+                <textarea name="besked" id="besked" placeholder="Skriv din besked her" required></textarea>
+            </div>
+
+            <div class="submit">
+                <label for="submit" class="visually-hidden">Send besked</label>
+                <input type="submit" id="submit" value="Send besked">
+            </div>
+
+        </form>
+
+    </main>
     
-    <footer></footer>
+    <footer>
+
+        <div class="email-footer">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+            <address aria-label="email"><a href="#" target="_blank">hej@brightspot.dk</a></address>
+        </div>
+
+        <div class="some-footer">
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook" aria-label="Bright Spot Facebook"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram" aria-label="Bright Spot Instagram"></i></a>
+        </div>
+    
+    </footer>
 
 </body>
 </html>

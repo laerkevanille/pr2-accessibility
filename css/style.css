@@ -57,7 +57,7 @@ header{
 }
 
 
-/*Hovedindhold*/
+/*Hovedindhold Generelt*/
 
 main{
     background-color: #f9feed;
@@ -67,10 +67,9 @@ main{
 }
 
 h1{
-    color: #FAF5E6;
-    background-color: #687354;
-    font-size: 64px;
-    padding: 0.3em 5%;
+   font-size: 36px;
+   color: #f9feed;
+   padding: 0.3em 5%;
 }
 
 h2{
@@ -80,6 +79,14 @@ h2{
 
 h3{
     color: #687354;
+}
+
+
+/*Index*/
+
+.index-title{
+    background-color: #687354;
+    font-size: 64px;
 }
 
 .banner{
@@ -192,6 +199,11 @@ cite{
     display: flex;
     justify-self: flex-end;
 }
+
+
+/*Kontakt*/
+
+
 
 
 /*Footer*/
