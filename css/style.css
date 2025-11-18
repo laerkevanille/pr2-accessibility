@@ -81,6 +81,10 @@ h3{
     color: #687354;
 }
 
+p{
+    color: #2e2e2e;
+}
+
 
 
 /*Index*/
@@ -252,10 +256,6 @@ cite{
     font-size: 18px;
 }
 
-strong{
-    color: #300e16;
-}
-
 form{
     display: flex;
     flex-direction: column;
@@ -334,10 +334,15 @@ input[type=submit]:hover{
 
 .akut{
     background-color: #687354;
+    color: #000;
     font-size: 20px;
     border-top: 2px solid #515b3f;
     border-bottom: 2px solid #515b3f;
     padding: 1.3em 5%;
+}
+
+.akut strong{
+    color: #f9feed;
 }
 
 .hotline{
