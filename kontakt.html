@@ -45,32 +45,41 @@
     <main>
 
         <h1>Skriv til os!</h1>
-        <p>Har du spørgsmål eller brug for hjælp? Tøv ikke med at skrive til os! Vi vender tilbage til dig hurtigst muligt.</p>
 
-        <p>Har du akut brug for hjælp, så <a href="#">find en hotline her</a> eller <strong>ring 112 i livstruende situationer.</strong></p>
+        <section class="tekst-kontakt">
+            <p>Har du spørgsmål eller brug for hjælp? Tøv ikke med at skrive til os! Vi vender tilbage til dig hurtigst muligt.</p>
 
-        <p>Få fat på os på email</p>
-        <address class="email-kontakt" aria-label="email-adresse"><a href="#">hej@brightspot.dk</a></address>
+            <p>Få fat på os på email</p>
+            <address class="email-kontakt" aria-label="email-adresse"><a href="#" target="_blank">hej@brightspot.dk</a></address>
 
-        <p>eller benyt vores kontaktformular nedenfor</p>
+            <p>eller benyt vores kontaktformular nedenfor</p>
+
+            <p>Har du akut brug for hjælp, så <a href="#">find en hotline her</a> eller <strong>ring 112 i livstruende situationer.</strong></p>
+        </section>
 
         <form action="">
 
-            <p><p>*</p>Skal udfyldes</p>
+            <div class="text">
+                <p class="asterisk">*</p>
+                <p>Skal udfyldes</p>
+            </div>
 
             <div class="navn">
-                <label for="navn">Navn<p>*</p></label>
-                <input type="text" name="navn" id="navn" autocomplete="name" required>
+                <label for="navn">Navn<p class="asterisk">*</p></label>
+                <input type="text" name="navn" id="navn" autocomplete="name" placeholder="Indtast navn" required>
             </div>
 
             <div class="email">
-                <label for="email">E-mail<p>*</p></label>
-                <input type="email" id="email" autocomplete="email" required>
+                <label for="email">E-mail<p class="asterisk">*</p></label>
+                <input type="email" id="email" autocomplete="email" placeholder="Indtast e-mail" required>
             </div>
 
-            <div class="henv-pers">
+            <fieldset>
 
-                <p>Jeg henvender mig på vegne af...<p>*</p></p>
+                <legend>
+                    Jeg henvender mig på vegne af...
+                    <p class="asterisk">*</p>
+                </legend>
 
                 <div class="options">
                     <input type="radio" name="henvendelse" id="mig" required>
@@ -80,10 +89,10 @@
                     <label for="anden">En anden</label>
                 </div>
 
-            </div>
+            </fieldset>
 
             <div class="besked">
-                <label for="besked">Besked<p>*</p></label>
+                <label for="besked">Besked<p class="asterisk">*</p></label>
                 <textarea name="besked" id="besked" placeholder="Skriv din besked her" required></textarea>
             </div>
 
