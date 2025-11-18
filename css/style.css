@@ -170,6 +170,40 @@ h2{
 
 /*Desktop*/
 
+@media screen and (min-width: 769px) and (max-width: 952px) {
+    button#search-btn{
+        background-color: transparent;
+        border: none;
+    }
+
+    #search-btn i{
+        color: #f9feed;
+        font-size: 24px;
+    }
+
+    nav input{
+        display: none;
+        padding: 10px 5px;
+        width: 50px;
+    }
+    
+    .show-search{
+        display: block;
+        position: absolute;
+        top: 80px;
+        right: 45px;
+        background-color: #FAF5E6;
+        width: 100%;
+        height: max-content;
+    }
+}
+
+@media screen and (min-width: 953px) {
+    button#search-btn{
+        display: none;
+    }
+}
+
 @media screen and (min-width: 769px){
     header{
         justify-content: space-around;
@@ -179,9 +213,9 @@ h2{
         display: none;
     }
 
-    .main-nav{
+    /*.main-nav{
         flex-wrap: wrap-reverse;
-    }
+    }*/
 
     .main-nav li a{
         font-size: 1.6vw;
@@ -221,6 +255,10 @@ h2{
 
     .main-nav li a{
         color:#687354;
+    }
+
+    button#search-btn{
+        display: none;
     }
 
     button#bars{

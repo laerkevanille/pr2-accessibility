@@ -7,3 +7,15 @@ const openNav = () => {
 }
 
 bars.addEventListener("click", openNav);
+
+
+
+const search = document.querySelector("#search-btn");
+
+const openInput = () => {
+    document.querySelector("header > nav > input").classList.toggle("show-search");
+    document.querySelector("#search-btn i").classList.toggle("fa-magnifying-glass");
+    document.querySelector("#search-btn i").classList.toggle("fa-xmark");
+}
+
+search.addEventListener("click", openInput);
