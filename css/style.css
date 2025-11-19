@@ -269,7 +269,7 @@ cite{
     background-image: url(/img/ms-banner.jpg);
 }
 
-.ms-banner, .vv-banner{
+.ms-banner, .vv-banner, .angst-banner, .depression-banner, .ensomhed-banner, .stress-banner{
     background-size: cover;
     background-position: top center;
     width: 90%;
@@ -353,6 +353,38 @@ cite{
     margin-bottom: 10px;
 }
 
+
+/*Mental sundhed - Angst*/
+
+.angst-banner{
+    background-image: url(/img/angst-banner.jpg);
+}
+
+.symptomliste, .behandling{
+    list-style-type: circle;
+    padding-bottom: 10px;
+}
+
+
+/*Mental sundhed - Depression*/
+
+.depression-banner{
+    background-image: url(/img/depression-banner.jpg);
+}
+
+
+/*Mental sundhed - Ensomhed*/
+
+.ensomhed-banner{
+    background-image: url(/img/ensomhed-banner.jpg);
+}
+
+
+/*Mental sundhed - Stress*/
+
+.stress-banner{
+    background-image: url(/img/stress-banner.jpg);
+}
 
 
 /*Velværestrategier*/
