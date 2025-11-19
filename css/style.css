@@ -269,7 +269,7 @@ cite{
     background-image: url(/img/ms-banner.jpg);
 }
 
-.ms-banner, .vv-banner, .angst-banner, .depression-banner, .ensomhed-banner, .stress-banner{
+.ms-banner, .vv-banner, .angst-banner, .depression-banner, .ensomhed-banner, .stress-banner, .logo-about{
     background-size: cover;
     background-position: top center;
     width: 90%;
