@@ -319,9 +319,11 @@ cite{
 }
 
 #emner img, #strategier img{
+    display: flex;
+    justify-self: center;
     width: 100%;
-    min-height: 150px;
-    margin: 0.8em 5%;
+    aspect-ratio: 1/1;
+    margin: 10px 0;
 }
 
 #emner h4, #strategier h4{
@@ -329,16 +331,22 @@ cite{
     font-size: 20px;
 }
 
-#emner a, #strategier a{
+#emner p, #strategier p{
     color: #accbde;
-    text-decoration: none;
     font-size: 18px;
 }
 
-#emner a:hover, #strategier a:hover{
+#emner a, #strategier a{
+    text-decoration: none;
+}
+
+#emner a:hover, #emner h4:hover, #emner p:hover, #strategier a:hover, #strategier h4:hover, #strategier p:hover{
+    cursor: pointer;
+}
+
+#emner h4:hover, #emner p:hover, #strategier h4:hover, #strategier p:hover{
     color: #0b283b;
     text-decoration: underline;
-    cursor: pointer;
 }
 
 .ms-akut, .vv-akut{
