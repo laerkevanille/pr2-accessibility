@@ -368,6 +368,7 @@ cite{
 .symptomliste a, .behandling a{
     color: #687354;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .symptomliste a:hover, .behandling a:hover{
@@ -379,6 +380,16 @@ cite{
 
 .depression-banner{
     background-image: url(/img/depression-banner.jpg);
+}
+
+.intext-link{
+    color: #687354;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.intext-link:hover{
+    text-decoration: underline;
 }
 
 
