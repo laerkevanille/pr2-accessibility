@@ -394,6 +394,25 @@ cite{
 }
 
 
+
+/*Om os*/
+
+.logo-about{
+    background-image: url(/img/projekt\ 2\ logo2.svg);
+    aspect-ratio: 1/1;
+    border: none;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
+#mission{
+    object-fit: contain;
+    width: 90%;
+    margin: 15px 5%;
+}
+
+
 /*Kontakt*/
 
 .tekst-kontakt{
@@ -541,6 +560,7 @@ footer{
     display: flex;
     justify-content: space-between;
     align-content: center;
+    align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 20px;
@@ -563,6 +583,33 @@ footer{
 .email-footer a{
     color: #f9feed;
     font-size: 16px;
+}
+
+.nyhed-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nyhed-footer form{
+    flex-direction: row;
+    align-content: center;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.nyhed-footer p{
+    color: #f9feed;
+    font-size: 16px;
+}
+
+.nyhed-footer input[type=submit]{
+    background-color: #accbde;
+    color: #515b3f;
+    font-size: 18px;
 }
 
 .some-footer{
@@ -690,6 +737,10 @@ footer{
     #bars i{
         font-size: 24px;
         color:#FAF5E6;
+    }
+
+    .nyhed-footer{
+        display: none;
     }
 
     .show{
