@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bright Spot</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/projekt 2 logo2.svg">
+    <title>Mental Sundhed - Bright Spot</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/img/projekt 2 logo2.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&family=Geologica:wght@100..900&family=Mochiy+Pop+One&family=Rum+Raisin&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/619f162d00.js" crossorigin="anonymous"></script>
-    <script src="js/navigation.js" defer=""></script>
+    <script src="/js/navigation.js" defer=""></script>
 </head>
 <body>
 
     <header>
 
-        <a href="index.html"><img src="img/projekt 2 logo2.svg" alt="bright spot logo" class="logo"></a>
+        <a href="/index.html"><img src="/img/projekt 2 logo2.svg" alt="bright spot logo" class="logo"></a>
 
         <nav class="main-nav">
 
@@ -24,11 +24,11 @@
             <input type="search" id="search" placeholder="Søg">
 
             <ul>
-                <li><a href="index.html">Forside</a></li>
+                <li><a href="/index.html">Forside</a></li>
                 <li><a href="/mental-sundhed/index.html" class="active">Om mental sundhed</a></li>
                 <li><a href="/velvære/index.html">Velværestrategier</a></li>
                 <li><a href="#">Om os</a></li>
-                <li><a href="kontakt.html">Kontakt</a></li>
+                <li><a href="/kontakt.html">Kontakt</a></li>
             </ul>
         </nav>
 
@@ -42,8 +42,83 @@
 
     </header>
 
+    <nav class="breadcrumb">
+        <ol>
+            <li><a href="/index.html">Forside</a></li>
+            <li class="divide" aria-hidden="true">/</li>
+            <li class="active">Om mental sundhed</li>
+        </ol>
+    </nav>
 
-    <main></main>
+    <main>
+
+        <h1>Om mental sundhed</h1>
+
+        <div class="ms-banner">
+            <a href="#emner" class="banner-btn">Find emne</a>
+        </div>
+
+        <section class="textbox ms-tekst">
+
+            <h2>Et diverst univers</h2>
+            <p>Går du og brygger på spørgsmål om mental sundhed? Hvad er mon egentlig normalt - og hvad vil det i grunden sige at være 'normal'? Det er noget, mange undrer sig over, på et eller andet tidspunkt i deres liv.</p>
+            <p>Der findes mange forskellige måder for vores hjerner at fungere. Faktisk næsten ligeså mange, som der findes mennesker her på Jorden. Alligevel har vi stadig mere tilfælles, end hvad der adskiller os.</p>
+
+            <h3>Svært at åbne op</h3>
+            <p>På trods af dette, er det nemt at komme til at føle sig alene, hvis man står i en vanskelig situation, for selvom det er noget, de fleste oplever, er det også noget, der ofte er svært at tale om.</p>
+            <p>Vi vil gerne hjælpe dig med at finde hoved og hale i, hvad mange unge faktisk går og føler. Her kan du udforske forskellige emner indenfor mental sundhed, så vi alle kan være sammen om, at sprede viden om, hvordan vi egentlig fungerer.</p>
+        
+        </section>
+
+        <section id="emner">
+
+            <section class="angst-emne">
+
+                <a href="angst.html"><h4>Angst</h4></a>
+
+                <img src="#" alt="">
+
+                <a href="angst.html">Lær om angst her</a>
+
+            </section>
+
+            <section class="depression-emne">
+
+                <a href="depression.html"><h4>Depression</h4></a>
+
+                <img src="#" alt="">
+
+                <a href="depression.html">Lær om depression her</a>
+
+            </section>
+
+            <section class="ensomhed-emne">
+
+                <a href="ensomhed.html"><h4>Ensomhed</h4></a>
+
+                <img src="#" alt="">
+
+                <a href="ensomhed.html">Lær om ensomhed her</a>
+
+            </section>
+
+            <section class="stress-emne">
+
+                <a href="stress.html"><h4>Stress</h4></a>
+
+                <img src="#" alt="">
+
+                <a href="stress.html">Lær om stress her</a>
+
+            </section>
+
+        </section>
+
+        <section class="akut ms-akut">
+            <p>Hvis du, eller nogen, du kender, står i en akut livstruende situation, <strong>skal du kontakte 112, lægevagten eller den nærmeste psykiatriske akutmodtagelse.</strong></p>
+        </section>
+        
+    </main>
 
     <footer>
 
