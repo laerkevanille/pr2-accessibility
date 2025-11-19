@@ -365,6 +365,15 @@ cite{
     padding-bottom: 10px;
 }
 
+.symptomliste a, .behandling a{
+    color: #687354;
+    text-decoration: none;
+}
+
+.symptomliste a:hover, .behandling a:hover{
+    text-decoration: underline;
+}
+
 
 /*Mental sundhed - Depression*/
 
