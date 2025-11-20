@@ -4,6 +4,9 @@
     font-family: 'Atkinson Hyperlegible', Verdana, Helvetica, Arial, sans-serif;
 }
 
+body{
+    background-color: #f9feed;
+}
 
 /*Header*/
 
@@ -93,6 +96,7 @@ main{
     background-image: linear-gradient(to bottom, #687354, #f9feed);
     width: 100%;
     padding-top: 7vh;
+    margin-bottom: 75px;
 }
 
 h1{
@@ -174,6 +178,7 @@ p{
 .left-div, .right-div{
     display: flex;
     flex-direction: row;
+    justify-content: center;
     align-content: center;
     gap: 15px;
     padding: 10px;
@@ -203,6 +208,7 @@ p{
 .left-content, .right-content{
     display: flex;
     flex-direction: column;
+    align-self: center;
     gap: 8px;
 }
 
@@ -306,6 +312,7 @@ cite{
     text-decoration: none;
     font-size: 24px;
     font-weight: 600;
+    box-shadow: 5px 5px 0.3em #2e2e2e;
     padding: 6px 15px;
     margin: 0 auto;
 }
@@ -355,8 +362,9 @@ cite{
 }
 
 #emner p, #strategier p{
-    color: #accbde;
+    color: #f9feed;
     font-size: 18px;
+    text-decoration: underline;
 }
 
 #emner a, #strategier a{
@@ -369,7 +377,7 @@ cite{
 }
 
 #emner h4:hover, #emner p:hover, #strategier h4:hover, #strategier p:hover{
-    color: #0b283b;
+    color: #accbde;
     text-decoration: underline;
 }
 
@@ -574,11 +582,14 @@ input[type=submit]:hover{
 
 .akut{
     background-color: #687354;
-    color: #000;
     font-size: 20px;
     border-top: 2px solid #515b3f;
     border-bottom: 2px solid #515b3f;
     padding: 1.3em 5%;
+}
+
+.akut p{
+    color: #f9feed;
 }
 
 .akut strong{
@@ -622,14 +633,18 @@ input[type=submit]:hover{
 /*Footer*/
 
 footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: nowrap;
-    padding: 20px;
+    padding: 15px 20px;
     background-color: #687354;
+    border-top: 2px solid #515b3f;
     width: 100%;
     min-height: fit-content;
 }
@@ -756,6 +771,10 @@ footer{
     
     #bars{
         display: none;
+    }
+
+    main{
+        margin-bottom: 125px;
     }
 
     .main-nav li a{
@@ -937,6 +956,11 @@ footer{
 
 
     /*Footer*/
+
+    footer{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
 
     .some-footer i{
         font-size: 32px;
