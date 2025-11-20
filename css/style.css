@@ -183,6 +183,10 @@ p{
     width: 100%
 }
 
+.left-div:hover, .right-div:hover{
+    background-color: #515b3f;
+}
+
 .right-div{
     border-radius: 30px 0 0 30px;
     border-right: none;
@@ -293,12 +297,12 @@ cite{
     display: flex;
     justify-self: center;
     position: relative;
-    top: 80%;
+    top: 75%;
     text-align: center;
-    background-color: #687354;
+    background-color: #accbde;
     border: 2px solid #515b3f;
     border-radius: 4px;
-    color: #f9feed;
+    color: #515b3f;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
@@ -307,7 +311,7 @@ cite{
 }
 
 .banner-btn:hover{
-    background-color: #515b3f;
+    background-color: #f9feed;
     text-decoration: underline;
 }
 
@@ -331,6 +335,10 @@ cite{
     padding: 1.3em 5%;
     margin: 1.3em 15%;
     aspect-ratio: 1/1;
+}
+
+#emner section:hover, #strategier section:hover{
+    background-color: #515b3f;
 }
 
 #emner img, #strategier img{
@@ -483,6 +491,10 @@ iframe{
     font-size: 18px;
 }
 
+.tekst-kontakt a:hover{
+    color: #0b283b;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -594,6 +606,10 @@ input[type=submit]:hover{
 
 .hotline a{
     color: #515b3f;
+}
+
+.hotline a:hover{
+    color: #0b283b;
 }
 
 .as-tel address:nth-of-type(1){
@@ -881,6 +897,10 @@ footer{
         background-size: cover;
         background-position: center;
         margin: 2em 5%;
+    }
+
+    .ms-banner a, .vv-banner a{
+        top: 80%;
     }
 
 
